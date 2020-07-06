@@ -1,0 +1,410 @@
+		* {
+		    padding:0;border:0 none;position: relative; outline: none;
+		}
+
+		#itensNavCor:before {
+		  content: "";
+		  position: absolute;
+		  width: 100%;
+		  height: 3px;
+		  bottom: 0.4em;
+		  left: 0;
+		  background: #ff7f00;
+		  transform: scaleX(0);
+		  transition: .25s linear;
+		}
+
+		#itensNavCor:hover:before,
+		#itensNavCor:focus:before {
+		  transform: scaleX(1);
+		}
+
+		#eventoTitulos:before {
+		  content: "";
+		  position: absolute;
+		  width: 100%;
+		  height: 3px;
+		  top: 1.2em;
+		  left: 0;
+		  background: #ff7f00;
+		  transform: scaleX(1);
+		  transition: .25s linear;
+		}
+
+		#itensNavCor{
+			color: white;
+			font-family: 'Rubik Mono One', sans-serif;
+		}
+
+		nav{
+			background-color: #5E4429;
+		}
+
+		footer{
+			background-color: #5E4429;
+		}
+
+		#dive {
+		  background-color: white;
+		  height: 400px;
+		  border: 2px solid black;
+		  border-radius: 20px;
+		  margin-left: 1vw;
+		  margin-right: 1vw;
+		}
+
+		.header {
+		  position: fixed;
+		  z-index: 1030;
+		  top: 3.5em;
+		  width: 100%;
+		  background-color: #f1f1f1;
+		}
+
+		.progress-container {
+		  width: 100%;
+		  height: 10px;
+		  background: #C4C4C4;
+  		  border-color: #92a8d1;
+		}
+
+		.progress-barr {
+		  height: 10px;
+		  background: #B96E1F;
+		  width: 0%;
+		}
+
+		.content {
+		  padding: 100px 0;
+		  margin: 50px auto 0 auto;
+		  width: 80%;
+		}
+
+		/*Botão Voltar ao Topo*/
+		@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+		body {
+		background: white;
+		margin:0;
+		padding:0;
+		}
+
+		.smoothscroll-top {
+			position:fixed;
+			opacity:0;
+			visibility:hidden;
+			overflow:hidden;
+			text-align:center;
+			z-index:99;
+			background-color: white;
+			border-color: black;
+			width:47px;
+			height:44px;
+			line-height:44px;
+			border-style: solid;
+			border-width: 2px;
+			border-color: #B96E1F;
+			right: 25px;
+			bottom: -25px;
+			border-radius: 5px;
+			transition:all .5s ease-in-out;
+			transition-delay:.2s;
+		}
+
+		.smoothscroll-top:hover {
+			background-color:#B96E1F;
+			color:#fff;
+			transition:all .2s ease-in-out;
+			transition-delay:0;
+		}
+
+		.smoothscroll-top.show {
+			visibility:visible;
+			cursor:pointer;
+			opacity:1;
+			bottom:25px;
+		}
+
+		.smoothscroll-top i.fa {
+			line-height:inherit;
+		}
+
+		/*Icones Redes Sociais*/
+		.circle-icon {
+		    background: white;
+		    width: 100px;
+		    height: 100px;
+		    border-radius: 50%;
+		    text-align: center;
+		    line-height: 100px;
+		    vertical-align: middle;
+		    padding: 30px;
+		}
+
+		.icon-background {
+		    color: black;
+		}
+
+		/*Icons Contato*/
+		#iconPhone{
+			color: black;
+			background-color: white;
+			border-radius: 1em; 
+			border-color: #B96E1F; 
+			border-style: solid;
+			border-width: 2px; 
+			color: black;
+			transition:all .5s ease-in-out;
+			transition-delay:.2s;
+		}
+
+		#iconPhone:hover {
+			background-color:#B96E1F;
+			color:white;
+			transition:all .2s ease-in-out;
+			transition-delay:0;
+			cursor: pointer;
+		}
+
+		#iconEnvelope {
+			color: black;
+			background-color: white;
+			border-radius: 1em; 
+			border-color: #B96E1F; 
+			border-style: solid;
+			border-width: 2px; 
+			color: black;
+			transition:all .5s ease-in-out;
+			transition-delay:.2s;
+		}
+
+		#iconEnvelope:hover {
+			background-color:#B96E1F;
+			color:white;
+			transition:all .2s ease-in-out;
+			transition-delay:0;
+			cursor: pointer;
+		}
+
+		#iconMarker {
+			color: black;
+			background-color: white;
+			border-radius: 1em; 
+			border-color: #B96E1F; 
+			border-style: solid;
+			border-width: 2px; 
+			color: black;
+			transition:all .5s ease-in-out;
+			transition-delay:.2s;
+		}
+
+		#iconMarker:hover {
+			background-color:#B96E1F;
+			color:white;
+			transition:all .2s ease-in-out;
+			transition-delay:0;
+			cursor: pointer;
+		}
+
+		/*Botão Contato*/
+		#botaoContato{
+			border-radius: 15px; 
+			border-color: #B96E1F; 
+			border-style: solid;color: black;
+			border-width: 2px;
+			transition:all .5s ease-in-out;
+			transition-delay:.2s;
+		}
+
+		#botaoContato:hover {
+			background-color:#B96E1F;
+			color:white;
+			transition:all .2s ease-in-out;
+			transition-delay:0;
+		}
+
+		#botaoContatoPortfolios{
+			transition:all .5s ease-in-out;
+			transition-delay:.2s;
+			border-radius: 15px; 
+			border-color: #B96E1F; 
+			border-style: solid;
+			color: black;
+			border-width: 2px;
+			margin-bottom: 2em;
+		}
+
+		#botaoContatoPortfolios:hover {
+			background-color:#B96E1F;
+			color:white;
+			transition:all .2s ease-in-out;
+			transition-delay:0;
+		}
+
+		#iconPhone:hover {
+			background-color:#B96E1F;
+			color:#fff;
+			transition:all .2s ease-in-out;
+			transition-delay:0;
+		}
+
+		@media screen and (max-width:480px) {
+		html {
+			font-size: 50%;
+			}
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 768px) {
+		html {
+			font-size: 75%;
+			}
+		}
+
+		#hoverSaberMais:hover{
+			transform: scale(1.4);	
+			overflow-y: hidden !important;
+		}
+
+	#iconPluse{
+
+		color: green;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@media (max-width: 991px) {
+	  #itensNavCor:hover:before,
+		#itensNavCor:focus:before {
+		  transform: scaleX(0);
+		}
+		li:hover{
+			background-color: #6e563e;
+		}
+		#itensNavCor:hover{
+			color: #ff7f00;
+		}
+	}
+
+	#formatarTexto{
+		text-align: justify;
+	}
+
+	/*Centralizar os Icones do Contato*/
+	@media (max-width: 767px) {
+	  	.CentralizarIconContato {
+	  		display:none;
+		}
+	}
+
+	/*Centralizar os Icones do Contato*/
+	@media (max-width: 767px) {
+	  	#aaa {
+			left:25%;
+		}
+	}
+
+
+	.form-control{}
+
+	.form-control:focus{
+		outline:0; outline:none; outline-offset:0; outline-offset:none;
+	}
+
+	.card{
+		margin: 0 2em 0 2em !important; 
+		padding-bottom: 2vh; 
+		border-radius: 15px !important;
+		margin-bottom: 5vh !important;
+	}
+
+	.card:hover {
+	  	bottom: 4px;
+	  	border: 1px;
+	  	box-shadow: 0 0 15px #B96E1F, 0 0 5px #B96E1F;
+	}
+
+	/*Escrever nome no Site*/
+	.typewriter {
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+
+	#tirarBorda{
+		box-shadow: 0 0 0 0;
+	}
+
+	/*Centralizar os Icones do Contato*/
+	@media (max-width: 574px) {
+	  	h5 {
+			font-size: 2.5vh !important;
+		}
+	}
+	
+	@media (max-width: 574px) {
+	  	#textoContato {
+			margin-top: 0em !important;
+		}
+	}
+	
+	@media (max-width: 400px) and (max-width: 574px) {
+	  	#resposivelLetras {
+			font-size: 1vh !important;
+		}
+	}
+	@media (max-width: 574px) {
+	  	h6,h3,h4,h2,#botaoContato {
+			font-size: 4vh;
+		}
+	}
+	@media (max-width: 574px) {
+	  	.card-title {
+			font-size: 4vh !important;
+		}
+	}
+	@media (max-width: 574px) {
+	  	label {
+			font-size: 2.5vh !important;
+		}
+	}
+/*	#asda{animation: roll 3s infinite;
+	}
+	#asda:hover{
+		transform: rotateX(180deg);
+	}
+  	@keyframes roll {
+	  	0% {
+	    	transform: rotate(0);
+	  	}
+	  	100% {
+	    	transform: rotate(360deg);
+	  	}
+	}*/
+
+	i.material-icons {
+		font-size: 2.5rem;
+		color: black;
+		position: relative;
+		border-radius: 50%;
+		padding: 5px;
+		margin: 3px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+		transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+	}
+
+	i.material-icons:hover {
+		color: white;
+		background-color: #B96E1F;
+		transform: rotate(180deg);
+		cursor: pointer;
+		box-shadow: none;
+	}
+	
+	@media (max-width: 574px) {
+	  	.formatarTextoCerto {
+			margin-left: 2em !Important; 
+			margin-right: 2em !Important;
+		}
+	}
+	
+
