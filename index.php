@@ -33,6 +33,9 @@
 
 	<!--PROTIP TOOTIP-->
 	<link rel="stylesheet" href="//min.gitcdn.xyz/repo/wintercounter/Protip/master/protip.min.css">
+	
+	<!--Sweet Alert2-->
+	<script src="sweetalert.js"></script>
 	<style type="text/css">
 	    ::-webkit-scrollbar {
     	    width:10px;
@@ -130,7 +133,7 @@
     	<div class="container" style="text-align: center; top: 2vh"> 
     	<div class="row">
         	<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        		<img src="img/jair.jpeg" style="background-color: #ff9800;box-shadow:-2px 4px 4px rgba(0, 0, 0);filter: brightness(80%);" class="rounded-circle" alt="Jair Lopes Junior" width="220" height="220"> 
+        		<img src="img/a.jpg" style="background-color: #ff9800;box-shadow:-2px 4px 4px rgba(0, 0, 0);filter: brightness(80%);" class="rounded-circle" alt="Jair Lopes Junior" width="220" height="220"> 
         	</div>
         </div>
 
@@ -478,9 +481,34 @@
 
 			if($nome != null && $email != null && $mensagem != null && $assunto != null){
 				mail($destinatario, $assunto, $corpo, $email);
-				echo "<script>alert('Email enviado com Sucesso!');</script>";
+				echo "
+    			<script>
+    			function alerta(){
+    			Swal.fire({
+    			  type: 'success',
+    			  icon: 'success',
+    			  text: 'E-mail enviado com sucesso!!',
+    			  showConfirmButton: false,
+    			  timer: 2500
+    			});
+    			}
+    			alerta();
+    			</script>";
 			}else{
-				echo "<script>alert('Por favor, preencha todos os campos.');</script>";
+				echo "
+    			<script>
+    			function alerta(){
+    			Swal.fire({
+    			  type: 'error',
+    			  icon: 'error',
+    			  text: 'Falha ao enviar E-mail!!',
+    			  showConfirmButton: false,
+    			  timer: 2500
+    			});
+    			}
+    			alerta();
+    			</script>";
+    		
 			}
 		}
 	?>
@@ -490,7 +518,7 @@
   	<!-- RODAPÉ -->
   	<footer class="py-4">
     	<div class="container">
-      		<p class="m-0 text-center text-white">Jair Lopes &copy; 2020</p>
+      		<p class="m-0 text-center text-white">Jair Lopes &copy; 2021</p>
     	</div>
   	</footer>
 
